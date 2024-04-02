@@ -11,7 +11,7 @@ import ContentMarketing from "./Pages/Services/ContentMarketing";
 import DigitalMarketing from "./Pages/Services/DigitalMarketing";
 import SeoMarketing from "./Pages/Services/SeoMarketing";
 import UiDesign from "./Pages/Services/UiDesign";
-import OurWork from "./Pages/Projects/OurWork";
+import OurWork from "./Pages/Projects/Work";
 import Projects from "./Pages/Projects/Projects";
 import ProjectsDetails from "./Pages/Projects/ProjectsDetails";
 import Pricing from "./Pages/Pricing/Pricing";
