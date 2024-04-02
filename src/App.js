@@ -11,7 +11,7 @@ import ContentMarketing from "./Pages/Services/ContentMarketing";
 import DigitalMarketing from "./Pages/Services/DigitalMarketing";
 import SeoMarketing from "./Pages/Services/SeoMarketing";
 import UiDesign from "./Pages/Services/UiDesign";
-import Work from "./Pages/Projects/Work";
+import OurWork from "./Pages/Projects/OurWork";
 import Projects from "./Pages/Projects/Projects";
 import ProjectsDetails from "./Pages/Projects/ProjectsDetails";
 import Pricing from "./Pages/Pricing/Pricing";
@@ -44,8 +44,8 @@ function App() {
             <Route path="/digital-marketing" element={<DigitalMarketing/>} />
             <Route path="/seo-marketing" element={<SeoMarketing/>} />
             <Route path="/ui-ux-design" element={<UiDesign/>} />
+            <Route path="/our-work" element={<OurWork/>} />
             <Route path="/projects" element={<Projects/>} />
-            <Route path="/our-work" element={<Work/>} />
             <Route path="/projects-details" element={<ProjectsDetails/>} />
             <Route path="/pricing" element={<Pricing/>} />
             <Route path="/team" element={<Team/>} />
