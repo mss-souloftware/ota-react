@@ -2,6 +2,8 @@ import React from 'react';
 import { pageTitle } from '../PageTitle';
 // import BreadCrumb from '../BreadCrumb';
 import HeaderOne from '../Header/HeaderOne';
+import Tab from 'react-bootstrap/Tab';
+import Tabs from 'react-bootstrap/Tabs';
 import FooterOne from '../Footer/FooterOne';
 import { Link } from 'react-router-dom';
 import portfolio1 from "../../assets/images/portfolio/portfolio-01.jpg";
@@ -71,43 +73,66 @@ const Projects = () => {
                             </div>
                             <div className="title two">
                                 <h2>
-                                our work <span>showcase</span>.
+                                    our work <span>showcase</span>.
                                 </h2>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div className="project__page p_relative see__pad">
+            <div className='container pt-5'>
                 <div className="row">
-                    {projrctData.map((item, id) => (
-                        <div className="col-lg-3 col-md-6 colsm-12" key={id}>
-                            <div className="portfolio__block p_relative">
-                                <div className="portfolio__image">
-                                    <figure>
-                                        <img src={item.image} alt="" />
-                                    </figure>
-                                </div>
-                                <div className="lower__content p_absolute">
-                                    <div className="protfolio__text">
-                                        <div className="text__block">
-                                            <h4>Sustainability</h4>
-                                            <p>Design</p>
-                                        </div>
-                                        <div className="text__block_two">
-                                            <h5>2019</h5>
-                                        </div>
+                    <div className="col-lg-12 col-md-12 text-center mx-auto">
+                        <Tabs
+                            defaultActiveKey="all"
+                            id="uncontrolled-tab-example"
+                            className="mb-3 justify-content-center border-0 navTabWork"
+                        >
+                            <Tab eventKey="all" title="ALL">
+                                <div className="p_relative see__pad">
+                                    <div className="row">
+                                        {projrctData.map((item, id) => (
+                                            <div className="col-lg-3 col-md-6 colsm-12" key={id}>
+                                                <div className="portfolio__block p_relative">
+                                                    <div className="portfolio__image">
+                                                        <figure>
+                                                            <img src={item.image} alt="" />
+                                                        </figure>
+                                                    </div>
+                                                    <div className="lower__content p_absolute">
+                                                        <div className="protfolio__text">
+                                                            <div className="text__block">
+                                                                <h4>Sustainability</h4>
+                                                                <p>Design</p>
+                                                            </div>
+                                                            <div className="text__block_two">
+                                                                <h5>2019</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div className="protfolio__button">
+                                                            <Link to="/projects-details" className="theme-btn theme-btn-one"> Read More<i className="icon-02"></i></Link>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        ))}
                                     </div>
-                                    <div className="protfolio__button">
-                                        <Link to="/projects-details" className="theme-btn theme-btn-one"> Read More<i className="icon-02"></i></Link>
-                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    ))}
+                            </Tab>
+                            <Tab eventKey="logo" title="Logo Design">
+                                Tab content for Logo
+                            </Tab>
+                            <Tab eventKey="website" title="Website Design">
+                                Tab content for Website
+                            </Tab>
+                            <Tab eventKey="app" title="App Design">
+                                Tab content for App
+                            </Tab>
+                        </Tabs>
+                    </div>
                 </div>
             </div>
+
             <FooterOne></FooterOne>
         </>
     );

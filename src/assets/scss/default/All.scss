@@ -176,6 +176,24 @@ $font-family_2: Rubik;
 	max-width: 150px;
 }
 
+.navTabWork .nav-item {
+	margin: 0 5px !important;
+}
+
+.navTabWork .nav-item button {
+	border-radius: 5px !important;
+	border: 0px !important;
+	color: #fff !important;
+	font-weight: 600 !important;
+	padding: 10px 30px !important;
+}
+
+.navTabWork .nav-item .active {
+	background: linear-gradient(248.11deg, #FB0E76 0%, #910694 100%) !important;
+	border: 0px !important;
+	color: #fff !important;
+}
+
 .circle-main {
 	text-align: center;
 	height: 230px;
