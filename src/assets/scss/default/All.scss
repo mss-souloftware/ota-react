@@ -194,6 +194,11 @@ $font-family_2: Rubik;
 	color: #fff !important;
 }
 
+.bannerBg{
+	background: url('../../images/banner/banner-bg.png') no-repeat top;
+	background-size: contain;
+}
+
 .circle-main {
 	text-align: center;
 	height: 230px;

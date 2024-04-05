@@ -6,6 +6,7 @@ import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import FooterOne from '../Footer/FooterOne';
 import { Link } from 'react-router-dom';
+import Slider from "react-slick";
 import portfolio1 from "../../assets/images/portfolio/portfolio-01.jpg";
 import portfolio2 from "../../assets/images/portfolio/portfolio-02.jpg";
 import portfolio3 from "../../assets/images/portfolio/portfolio-03.jpg";
@@ -16,6 +17,23 @@ import portfolio7 from "../../assets/images/portfolio/portfolio-07.jpg";
 import portfolio8 from "../../assets/images/portfolio/portfolio-08.jpg";
 import g1 from "../../assets/images/banner/heroBanner.jpg";
 
+let allSlides = {
+    dots: true,
+    rows: 2,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+};
+
+let logoDesign = {
+    dots: true,
+    rows: 2,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+};
 
 const Projects = () => {
     pageTitle('Projects');
@@ -80,7 +98,7 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
-            <div className='container pt-5'>
+            <div className='container bannerBg pt-5'>
                 <div className="row">
                     <div className="col-lg-12 col-md-12 text-center mx-auto">
                         <Tabs
@@ -91,36 +109,111 @@ const Projects = () => {
                             <Tab eventKey="all" title="ALL">
                                 <div className="p_relative see__pad">
                                     <div className="row">
-                                        {projrctData.map((item, id) => (
-                                            <div className="col-lg-3 col-md-6 colsm-12" key={id}>
-                                                <div className="portfolio__block p_relative">
-                                                    <div className="portfolio__image">
-                                                        <figure>
-                                                            <img src={item.image} alt="" />
-                                                        </figure>
-                                                    </div>
-                                                    <div className="lower__content p_absolute">
-                                                        <div className="protfolio__text">
-                                                            <div className="text__block">
-                                                                <h4>Sustainability</h4>
-                                                                <p>Design</p>
-                                                            </div>
-                                                            <div className="text__block_two">
-                                                                <h5>2019</h5>
-                                                            </div>
+                                        <Slider {...allSlides}>
+                                            {projrctData.map((item, id) => (
+                                                <div className="col-lg-3 col-md-6 colsm-12 mb-4" key={id}>
+                                                    <div className="portfolio__block p_relative">
+                                                        <div className="portfolio__image">
+                                                            <figure>
+                                                                <img src={item.image} alt="" />
+                                                            </figure>
                                                         </div>
-                                                        <div className="protfolio__button">
-                                                            <Link to="/projects-details" className="theme-btn theme-btn-one"> Read More<i className="icon-02"></i></Link>
-                                                        </div>
+                                                        {/* <div className="lower__content p_absolute">
+                                                            <div className="protfolio__text">
+                                                                <div className="text__block">
+                                                                    <h4>Sustainability</h4>
+                                                                    <p>Design</p>
+                                                                </div>
+                                                                <div className="text__block_two">
+                                                                    <h5>2019</h5>
+                                                                </div>
+                                                            </div>
+                                                            <div className="protfolio__button">
+                                                                <Link to="/projects-details" className="theme-btn theme-btn-one"> Read More<i className="icon-02"></i></Link>
+                                                            </div>
+                                                        </div> */}
                                                     </div>
                                                 </div>
-                                            </div>
-                                        ))}
+                                            ))}
+                                        </Slider>
                                     </div>
                                 </div>
                             </Tab>
                             <Tab eventKey="logo" title="Logo Design">
-                                Tab content for Logo
+                                <Slider {...logoDesign}>
+                                    <div className="col-lg-3 col-md-6 colsm-12 mb-4">
+                                        <div className="portfolio__block p_relative">
+                                            <div className="portfolio__image">
+                                                <figure>
+                                                    <img src={portfolio1} alt="" />
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-3 col-md-6 colsm-12 mb-4">
+                                        <div className="portfolio__block p_relative">
+                                            <div className="portfolio__image">
+                                                <figure>
+                                                    <img src={portfolio2} alt="" />
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-3 col-md-6 colsm-12 mb-4">
+                                        <div className="portfolio__block p_relative">
+                                            <div className="portfolio__image">
+                                                <figure>
+                                                    <img src={portfolio3} alt="" />
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-3 col-md-6 colsm-12 mb-4">
+                                        <div className="portfolio__block p_relative">
+                                            <div className="portfolio__image">
+                                                <figure>
+                                                    <img src={portfolio1} alt="" />
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-3 col-md-6 colsm-12 mb-4">
+                                        <div className="portfolio__block p_relative">
+                                            <div className="portfolio__image">
+                                                <figure>
+                                                    <img src={portfolio2} alt="" />
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-3 col-md-6 colsm-12 mb-4">
+                                        <div className="portfolio__block p_relative">
+                                            <div className="portfolio__image">
+                                                <figure>
+                                                    <img src={portfolio3} alt="" />
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-3 col-md-6 colsm-12 mb-4">
+                                        <div className="portfolio__block p_relative">
+                                            <div className="portfolio__image">
+                                                <figure>
+                                                    <img src={portfolio2} alt="" />
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-3 col-md-6 colsm-12 mb-4">
+                                        <div className="portfolio__block p_relative">
+                                            <div className="portfolio__image">
+                                                <figure>
+                                                    <img src={portfolio1} alt="" />
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Slider>
                             </Tab>
                             <Tab eventKey="website" title="Website Design">
                                 Tab content for Website
@@ -131,7 +224,7 @@ const Projects = () => {
                         </Tabs>
                     </div>
                 </div>
-            </div>
+            </div >
 
             <FooterOne></FooterOne>
         </>

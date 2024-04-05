@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import $ from 'jquery';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import 'swiper/css';
 import "swiper/css/pagination";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -9,6 +11,7 @@ import reportWebVitals from './reportWebVitals';
 import './assets/scss/Style.scss';
 import MousePointer from './Pages/MousePointer';
 import { ParallaxProvider } from "react-scroll-parallax";
+
 
 const RootComponent = () => {
   useEffect(() => {
