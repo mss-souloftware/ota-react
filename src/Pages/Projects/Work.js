@@ -17,22 +17,41 @@ import portfolio7 from "../../assets/images/portfolio/portfolio-07.jpg";
 import portfolio8 from "../../assets/images/portfolio/portfolio-08.jpg";
 import g1 from "../../assets/images/banner/heroBanner.jpg";
 
-let allSlides = {
-    dots: true,
-    rows: 2,
+let allSlidesFirst = {
+    dots: false,
+    arrows: false,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+};
+
+let allSlidesSecond = {
+    dots: false,
+    arrows: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    rtl: true
 };
 
 let logoDesign = {
-    dots: true,
-    rows: 2,
+    dots: false,
+    arrows: false,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
 };
 
 const Projects = () => {
@@ -109,16 +128,16 @@ const Projects = () => {
                             <Tab eventKey="all" title="ALL">
                                 <div className="p_relative see__pad">
                                     <div className="row">
-                                        <Slider {...allSlides}>
+                                        <Slider {...allSlidesFirst}>
                                             {projrctData.map((item, id) => (
                                                 <div className="col-lg-3 col-md-6 colsm-12 mb-4" key={id}>
-                                                    <div className="portfolio__block p_relative">
+                                                    <div className="portfolio__block p_relative p-2">
                                                         <div className="portfolio__image">
                                                             <figure>
                                                                 <img src={item.image} alt="" />
                                                             </figure>
                                                         </div>
-                                                        {/* <div className="lower__content p_absolute">
+                                                        <div className="lower__content p_absolute">
                                                             <div className="protfolio__text">
                                                                 <div className="text__block">
                                                                     <h4>Sustainability</h4>
@@ -131,7 +150,37 @@ const Projects = () => {
                                                             <div className="protfolio__button">
                                                                 <Link to="/projects-details" className="theme-btn theme-btn-one"> Read More<i className="icon-02"></i></Link>
                                                             </div>
-                                                        </div> */}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            ))}
+                                        </Slider>
+                                    </div>
+
+                                    <div className="row">
+                                        <Slider {...allSlidesSecond}>
+                                            {projrctData.map((item, id) => (
+                                                <div className="col-lg-3 col-md-6 colsm-12 mb-4" key={id}>
+                                                    <div className="portfolio__block p_relative p-2">
+                                                        <div className="portfolio__image">
+                                                            <figure>
+                                                                <img src={item.image} alt="" />
+                                                            </figure>
+                                                        </div>
+                                                        <div className="lower__content p_absolute">
+                                                            <div className="protfolio__text">
+                                                                <div className="text__block">
+                                                                    <h4>Sustainability</h4>
+                                                                    <p>Design</p>
+                                                                </div>
+                                                                <div className="text__block_two">
+                                                                    <h5>2019</h5>
+                                                                </div>
+                                                            </div>
+                                                            <div className="protfolio__button">
+                                                                <Link to="/projects-details" className="theme-btn theme-btn-one"> Read More<i className="icon-02"></i></Link>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             ))}
@@ -142,84 +191,428 @@ const Projects = () => {
                             <Tab eventKey="logo" title="Logo Design">
                                 <Slider {...logoDesign}>
                                     <div className="col-lg-3 col-md-6 colsm-12 mb-4">
-                                        <div className="portfolio__block p_relative">
+                                        <div className="portfolio__block p_relative p-2">
                                             <div className="portfolio__image">
                                                 <figure>
                                                     <img src={portfolio1} alt="" />
                                                 </figure>
                                             </div>
+                                            <div className="lower__content p_absolute">
+                                                <div className="protfolio__text">
+                                                    <div className="text__block">
+                                                        <h4>Sustainability</h4>
+                                                        <p>Design</p>
+                                                    </div>
+                                                    <div className="text__block_two">
+                                                        <h5>2019</h5>
+                                                    </div>
+                                                </div>
+                                                <div className="protfolio__button">
+                                                    <Link to="/projects-details" className="theme-btn theme-btn-one"> Read More<i className="icon-02"></i></Link>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="col-lg-3 col-md-6 colsm-12 mb-4">
-                                        <div className="portfolio__block p_relative">
+                                        <div className="portfolio__block p_relative p-2">
                                             <div className="portfolio__image">
                                                 <figure>
                                                     <img src={portfolio2} alt="" />
                                                 </figure>
                                             </div>
+                                            <div className="lower__content p_absolute">
+                                                <div className="protfolio__text">
+                                                    <div className="text__block">
+                                                        <h4>Sustainability</h4>
+                                                        <p>Design</p>
+                                                    </div>
+                                                    <div className="text__block_two">
+                                                        <h5>2019</h5>
+                                                    </div>
+                                                </div>
+                                                <div className="protfolio__button">
+                                                    <Link to="/projects-details" className="theme-btn theme-btn-one"> Read More<i className="icon-02"></i></Link>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="col-lg-3 col-md-6 colsm-12 mb-4">
-                                        <div className="portfolio__block p_relative">
+                                        <div className="portfolio__block p_relative p-2">
                                             <div className="portfolio__image">
                                                 <figure>
                                                     <img src={portfolio3} alt="" />
                                                 </figure>
                                             </div>
+                                            <div className="lower__content p_absolute">
+                                                <div className="protfolio__text">
+                                                    <div className="text__block">
+                                                        <h4>Sustainability</h4>
+                                                        <p>Design</p>
+                                                    </div>
+                                                    <div className="text__block_two">
+                                                        <h5>2019</h5>
+                                                    </div>
+                                                </div>
+                                                <div className="protfolio__button">
+                                                    <Link to="/projects-details" className="theme-btn theme-btn-one"> Read More<i className="icon-02"></i></Link>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="col-lg-3 col-md-6 colsm-12 mb-4">
-                                        <div className="portfolio__block p_relative">
+                                        <div className="portfolio__block p_relative p-2">
                                             <div className="portfolio__image">
                                                 <figure>
                                                     <img src={portfolio1} alt="" />
                                                 </figure>
                                             </div>
+                                            <div className="lower__content p_absolute">
+                                                <div className="protfolio__text">
+                                                    <div className="text__block">
+                                                        <h4>Sustainability</h4>
+                                                        <p>Design</p>
+                                                    </div>
+                                                    <div className="text__block_two">
+                                                        <h5>2019</h5>
+                                                    </div>
+                                                </div>
+                                                <div className="protfolio__button">
+                                                    <Link to="/projects-details" className="theme-btn theme-btn-one"> Read More<i className="icon-02"></i></Link>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="col-lg-3 col-md-6 colsm-12 mb-4">
-                                        <div className="portfolio__block p_relative">
+                                        <div className="portfolio__block p_relative p-2">
                                             <div className="portfolio__image">
                                                 <figure>
                                                     <img src={portfolio2} alt="" />
                                                 </figure>
                                             </div>
+                                            <div className="lower__content p_absolute">
+                                                <div className="protfolio__text">
+                                                    <div className="text__block">
+                                                        <h4>Sustainability</h4>
+                                                        <p>Design</p>
+                                                    </div>
+                                                    <div className="text__block_two">
+                                                        <h5>2019</h5>
+                                                    </div>
+                                                </div>
+                                                <div className="protfolio__button">
+                                                    <Link to="/projects-details" className="theme-btn theme-btn-one"> Read More<i className="icon-02"></i></Link>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="col-lg-3 col-md-6 colsm-12 mb-4">
-                                        <div className="portfolio__block p_relative">
+                                        <div className="portfolio__block p_relative p-2">
                                             <div className="portfolio__image">
                                                 <figure>
                                                     <img src={portfolio3} alt="" />
                                                 </figure>
                                             </div>
+                                            <div className="lower__content p_absolute">
+                                                <div className="protfolio__text">
+                                                    <div className="text__block">
+                                                        <h4>Sustainability</h4>
+                                                        <p>Design</p>
+                                                    </div>
+                                                    <div className="text__block_two">
+                                                        <h5>2019</h5>
+                                                    </div>
+                                                </div>
+                                                <div className="protfolio__button">
+                                                    <Link to="/projects-details" className="theme-btn theme-btn-one"> Read More<i className="icon-02"></i></Link>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="col-lg-3 col-md-6 colsm-12 mb-4">
-                                        <div className="portfolio__block p_relative">
+                                        <div className="portfolio__block p_relative p-2">
                                             <div className="portfolio__image">
                                                 <figure>
                                                     <img src={portfolio2} alt="" />
                                                 </figure>
                                             </div>
+                                            <div className="lower__content p_absolute">
+                                                <div className="protfolio__text">
+                                                    <div className="text__block">
+                                                        <h4>Sustainability</h4>
+                                                        <p>Design</p>
+                                                    </div>
+                                                    <div className="text__block_two">
+                                                        <h5>2019</h5>
+                                                    </div>
+                                                </div>
+                                                <div className="protfolio__button">
+                                                    <Link to="/projects-details" className="theme-btn theme-btn-one"> Read More<i className="icon-02"></i></Link>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="col-lg-3 col-md-6 colsm-12 mb-4">
-                                        <div className="portfolio__block p_relative">
+                                        <div className="portfolio__block p_relative p-2">
                                             <div className="portfolio__image">
                                                 <figure>
                                                     <img src={portfolio1} alt="" />
                                                 </figure>
+                                            </div>
+                                            <div className="lower__content p_absolute">
+                                                <div className="protfolio__text">
+                                                    <div className="text__block">
+                                                        <h4>Sustainability</h4>
+                                                        <p>Design</p>
+                                                    </div>
+                                                    <div className="text__block_two">
+                                                        <h5>2019</h5>
+                                                    </div>
+                                                </div>
+                                                <div className="protfolio__button">
+                                                    <Link to="/projects-details" className="theme-btn theme-btn-one"> Read More<i className="icon-02"></i></Link>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </Slider>
                             </Tab>
                             <Tab eventKey="website" title="Website Design">
-                                Tab content for Website
+                                <Slider {...logoDesign}>
+                                    <div className="col-lg-3 col-md-6 colsm-12 mb-4">
+                                        <div className="portfolio__block p_relative p-2">
+                                            <div className="portfolio__image">
+                                                <figure>
+                                                    <img src={portfolio4} alt="" />
+                                                </figure>
+                                            </div>
+                                            <div className="lower__content p_absolute">
+                                                <div className="protfolio__text">
+                                                    <div className="text__block">
+                                                        <h4>Sustainability</h4>
+                                                        <p>Design</p>
+                                                    </div>
+                                                    <div className="text__block_two">
+                                                        <h5>2019</h5>
+                                                    </div>
+                                                </div>
+                                                <div className="protfolio__button">
+                                                    <Link to="/projects-details" className="theme-btn theme-btn-one"> Read More<i className="icon-02"></i></Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-3 col-md-6 colsm-12 mb-4">
+                                        <div className="portfolio__block p_relative p-2">
+                                            <div className="portfolio__image">
+                                                <figure>
+                                                    <img src={portfolio5} alt="" />
+                                                </figure>
+                                            </div>
+                                            <div className="lower__content p_absolute">
+                                                <div className="protfolio__text">
+                                                    <div className="text__block">
+                                                        <h4>Sustainability</h4>
+                                                        <p>Design</p>
+                                                    </div>
+                                                    <div className="text__block_two">
+                                                        <h5>2019</h5>
+                                                    </div>
+                                                </div>
+                                                <div className="protfolio__button">
+                                                    <Link to="/projects-details" className="theme-btn theme-btn-one"> Read More<i className="icon-02"></i></Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-3 col-md-6 colsm-12 mb-4">
+                                        <div className="portfolio__block p_relative p-2">
+                                            <div className="portfolio__image">
+                                                <figure>
+                                                    <img src={portfolio6} alt="" />
+                                                </figure>
+                                            </div>
+                                            <div className="lower__content p_absolute">
+                                                <div className="protfolio__text">
+                                                    <div className="text__block">
+                                                        <h4>Sustainability</h4>
+                                                        <p>Design</p>
+                                                    </div>
+                                                    <div className="text__block_two">
+                                                        <h5>2019</h5>
+                                                    </div>
+                                                </div>
+                                                <div className="protfolio__button">
+                                                    <Link to="/projects-details" className="theme-btn theme-btn-one"> Read More<i className="icon-02"></i></Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-3 col-md-6 colsm-12 mb-4">
+                                        <div className="portfolio__block p_relative p-2">
+                                            <div className="portfolio__image">
+                                                <figure>
+                                                    <img src={portfolio5} alt="" />
+                                                </figure>
+                                            </div>
+                                            <div className="lower__content p_absolute">
+                                                <div className="protfolio__text">
+                                                    <div className="text__block">
+                                                        <h4>Sustainability</h4>
+                                                        <p>Design</p>
+                                                    </div>
+                                                    <div className="text__block_two">
+                                                        <h5>2019</h5>
+                                                    </div>
+                                                </div>
+                                                <div className="protfolio__button">
+                                                    <Link to="/projects-details" className="theme-btn theme-btn-one"> Read More<i className="icon-02"></i></Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-3 col-md-6 colsm-12 mb-4">
+                                        <div className="portfolio__block p_relative p-2">
+                                            <div className="portfolio__image">
+                                                <figure>
+                                                    <img src={portfolio6} alt="" />
+                                                </figure>
+                                            </div>
+                                            <div className="lower__content p_absolute">
+                                                <div className="protfolio__text">
+                                                    <div className="text__block">
+                                                        <h4>Sustainability</h4>
+                                                        <p>Design</p>
+                                                    </div>
+                                                    <div className="text__block_two">
+                                                        <h5>2019</h5>
+                                                    </div>
+                                                </div>
+                                                <div className="protfolio__button">
+                                                    <Link to="/projects-details" className="theme-btn theme-btn-one"> Read More<i className="icon-02"></i></Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Slider>
                             </Tab>
                             <Tab eventKey="app" title="App Design">
-                                Tab content for App
+                                <Slider {...logoDesign}>
+                                    <div className="col-lg-3 col-md-6 colsm-12 mb-4">
+                                        <div className="portfolio__block p_relative p-2">
+                                            <div className="portfolio__image">
+                                                <figure>
+                                                    <img src={portfolio4} alt="" />
+                                                </figure>
+                                            </div>
+                                            <div className="lower__content p_absolute">
+                                                <div className="protfolio__text">
+                                                    <div className="text__block">
+                                                        <h4>Sustainability</h4>
+                                                        <p>Design</p>
+                                                    </div>
+                                                    <div className="text__block_two">
+                                                        <h5>2019</h5>
+                                                    </div>
+                                                </div>
+                                                <div className="protfolio__button">
+                                                    <Link to="/projects-details" className="theme-btn theme-btn-one"> Read More<i className="icon-02"></i></Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-3 col-md-6 colsm-12 mb-4">
+                                        <div className="portfolio__block p_relative p-2">
+                                            <div className="portfolio__image">
+                                                <figure>
+                                                    <img src={portfolio5} alt="" />
+                                                </figure>
+                                            </div>
+                                            <div className="lower__content p_absolute">
+                                                <div className="protfolio__text">
+                                                    <div className="text__block">
+                                                        <h4>Sustainability</h4>
+                                                        <p>Design</p>
+                                                    </div>
+                                                    <div className="text__block_two">
+                                                        <h5>2019</h5>
+                                                    </div>
+                                                </div>
+                                                <div className="protfolio__button">
+                                                    <Link to="/projects-details" className="theme-btn theme-btn-one"> Read More<i className="icon-02"></i></Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-3 col-md-6 colsm-12 mb-4">
+                                        <div className="portfolio__block p_relative p-2">
+                                            <div className="portfolio__image">
+                                                <figure>
+                                                    <img src={portfolio6} alt="" />
+                                                </figure>
+                                            </div>
+                                            <div className="lower__content p_absolute">
+                                                <div className="protfolio__text">
+                                                    <div className="text__block">
+                                                        <h4>Sustainability</h4>
+                                                        <p>Design</p>
+                                                    </div>
+                                                    <div className="text__block_two">
+                                                        <h5>2019</h5>
+                                                    </div>
+                                                </div>
+                                                <div className="protfolio__button">
+                                                    <Link to="/projects-details" className="theme-btn theme-btn-one"> Read More<i className="icon-02"></i></Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-3 col-md-6 colsm-12 mb-4">
+                                        <div className="portfolio__block p_relative p-2">
+                                            <div className="portfolio__image">
+                                                <figure>
+                                                    <img src={portfolio5} alt="" />
+                                                </figure>
+                                            </div>
+                                            <div className="lower__content p_absolute">
+                                                <div className="protfolio__text">
+                                                    <div className="text__block">
+                                                        <h4>Sustainability</h4>
+                                                        <p>Design</p>
+                                                    </div>
+                                                    <div className="text__block_two">
+                                                        <h5>2019</h5>
+                                                    </div>
+                                                </div>
+                                                <div className="protfolio__button">
+                                                    <Link to="/projects-details" className="theme-btn theme-btn-one"> Read More<i className="icon-02"></i></Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-3 col-md-6 colsm-12 mb-4">
+                                        <div className="portfolio__block p_relative p-2">
+                                            <div className="portfolio__image">
+                                                <figure>
+                                                    <img src={portfolio6} alt="" />
+                                                </figure>
+                                            </div>
+                                            <div className="lower__content p_absolute">
+                                                <div className="protfolio__text">
+                                                    <div className="text__block">
+                                                        <h4>Sustainability</h4>
+                                                        <p>Design</p>
+                                                    </div>
+                                                    <div className="text__block_two">
+                                                        <h5>2019</h5>
+                                                    </div>
+                                                </div>
+                                                <div className="protfolio__button">
+                                                    <Link to="/projects-details" className="theme-btn theme-btn-one"> Read More<i className="icon-02"></i></Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Slider>
                             </Tab>
                         </Tabs>
                     </div>
