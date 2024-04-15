@@ -2,10 +2,10 @@ import React, { useEffect } from 'react';
 import Swiper from 'swiper';
 import 'swiper/css';
 import "swiper/css/pagination";
-import authorImg1 from "../../../assets/images/resource/author-01.png";
-import authorImg2 from "../../../assets/images/resource/author-02.png";
-import authorImg3 from "../../../assets/images/resource/author-03.png";
-import authorImg4 from "../../../assets/images/resource/author-04.png";
+import authorImg1 from "../../../assets/images/home/test1.jpg";
+import authorImg2 from "../../../assets/images/home/test2.jpg";
+import authorImg3 from "../../../assets/images/home/test3.jpg";
+import authorImg4 from "../../../assets/images/home/test4.jpg";
 
 const TestimonialsSection = () => {
   const testimonials = [

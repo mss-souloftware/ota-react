@@ -1,5 +1,5 @@
 import React from 'react';
-import choose1 from "../../../assets/images/resource/choose-01.png";
+import choose1 from "../../../assets/images/home/3.jpg";
 import choose2 from "../../../assets/images/resource/choose-02.png";
 import choose3 from "../../../assets/images/resource/choose-02.png";
 import choose4 from "../../../assets/images/resource/choose-02.png";

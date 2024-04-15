@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from "../../assets/images/logo.png";
-import g1 from "../../assets/images/resource/gallery-01.png";
-import g2 from "../../assets/images/resource/gallery-02.png";
-import g3 from "../../assets/images/resource/gallery-03.png";
-import g4 from "../../assets/images/resource/gallery-04.png";
-import g5 from "../../assets/images/resource/gallery-05.png";
-import g6 from "../../assets/images/resource/gallery-06.png";
+import g1 from "../../assets/images/home/gallery1.jpg";
+import g2 from "../../assets/images/home/gallery2.jpg";
+import g3 from "../../assets/images/home/gallery3.jpg";
+import g4 from "../../assets/images/home/gallery4.jpg";
+import g5 from "../../assets/images/home/gallery5.jpg";
+import g6 from "../../assets/images/home/gallery6.jpg";
 
 const FooterOne = () => {
     const handleSubmit = (e) => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import g1 from "../assets/images/resource/page-title-bg.jpg";
+import g1 from "../assets/images/about/heroBg.jpg";
 
 const BreadCrumb = () => {
   const location = useLocation();

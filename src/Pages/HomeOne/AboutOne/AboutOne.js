@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import CountUp from 'react-countup';
 import BannerBg from "../../../assets/images/shapes/shape-02.png";
-import AboutUs from "../../../assets/images/resource/about-us.png";
+import AboutUs from "../../../assets/images/home/2.jpg";
 import shape1 from "../../../assets/images/shapes/shape-01.png";
 
 

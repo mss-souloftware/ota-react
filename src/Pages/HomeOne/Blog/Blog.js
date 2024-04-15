@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import news1 from "../../../assets/images/news/news-1.jpg";
-import news2 from "../../../assets/images/news/news-2.jpg";
-import news3 from "../../../assets/images/news/news-3.jpg";
+import news1 from "../../../assets/images/home/blog1.jpg";
+import news2 from "../../../assets/images/home/blog2.jpg";
+import news3 from "../../../assets/images/home/blog3.jpg";
 
 
 const Blog = () => {

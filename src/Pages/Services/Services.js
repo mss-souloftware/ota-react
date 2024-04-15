@@ -4,7 +4,7 @@ import BreadCrumb  from '../BreadCrumb';
 import HeaderOne from '../Header/HeaderOne';
 import FooterOne from '../Footer/FooterOne';
 import { Link } from 'react-router-dom';
-import two from "../../assets/images/resource/man.png";
+import two from "../../assets/images/services/contact.jpg";
 import shape5 from "../../assets/images/shapes/shape-10.png";
 
 

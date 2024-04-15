@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import shap1 from "../../../assets/images/banner/banner-shap-01.png";
 import BannerBg from "../../../assets/images/banner/banner-bg.png";
-import Banner1 from "../../../assets/images/banner/banner-01.png";
+import Banner1 from "../../../assets/images/home/image1.jpg";
 import C2 from "../../../assets/images/resource/02.png";
 import { Parallax } from 'react-parallax';
 

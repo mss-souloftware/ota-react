@@ -2,10 +2,10 @@ import React, {useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import CountUp from 'react-countup';
 import shape4 from "../../../assets/images/shapes/shape-04.png";
-import team1 from "../../../assets/images/resource/team-01.png";
-import team2 from "../../../assets/images/resource/team-02.png";
-import team3 from "../../../assets/images/resource/team-03.png";
-import team4 from "../../../assets/images/resource/team-04.png";
+import team1 from "../../../assets/images/home/client1.jpg";
+import team2 from "../../../assets/images/home/client2.jpg";
+import team3 from "../../../assets/images/home/client3.jpg";
+import team4 from "../../../assets/images/home/client4.jpg";
 import WOW from 'wowjs';
 
 const Team = () => {

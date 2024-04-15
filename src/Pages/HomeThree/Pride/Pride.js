@@ -1,6 +1,6 @@
 import React from 'react';
-import two from "../../../assets/images/resource/bg-04.jpg";
-import two2 from "../../../assets/images/resource/icon-04.png";
+import two from "../../../assets/images/about/pride.jpg";
+import two2 from "../../../assets/images/logo.png";
 
 const Pride = () => {
     return (
