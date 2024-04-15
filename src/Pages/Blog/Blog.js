@@ -4,12 +4,12 @@ import HeaderOne from '../Header/HeaderOne';
 import FooterOne from '../Footer/FooterOne';
 import BreadCrumb  from '../BreadCrumb';
 import { Link } from 'react-router-dom';
-import news1 from "../../assets/images/news/news-1.jpg";
-import news2 from "../../assets/images/news/news-2.jpg";
-import news3 from "../../assets/images/news/news-3.jpg";
-import news4 from "../../assets/images/news/news-4.jpg";
-import news5 from "../../assets/images/news/news-5.jpg";
-import news6 from "../../assets/images/news/news-6.jpg";
+import news1 from "../../assets/images/blog/blog1.jpg";
+import news2 from "../../assets/images/blog/blog2.jpg";
+import news3 from "../../assets/images/blog/blog3.jpg";
+import news4 from "../../assets/images/blog/blog4.jpg";
+import news5 from "../../assets/images/blog/blog5.jpg";
+import news6 from "../../assets/images/blog/blog6.jpg";
 
 
 const Blog = () => {

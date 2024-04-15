@@ -4,8 +4,8 @@ import HeaderOne from '../Header/HeaderOne';
 import FooterOne from '../Footer/FooterOne';
 import BreadCrumb  from '../BreadCrumb';
 import { Link } from 'react-router-dom';
-import contact from "../../assets/images/resource/contact.jpg";
-import map from "../../assets/images/resource/map.jpg";
+import contact from "../../assets/images/contact/map.jpg";
+import map from "../../assets/images/contact/contactDetail.jpg";
 
 
 const Contact = () => {

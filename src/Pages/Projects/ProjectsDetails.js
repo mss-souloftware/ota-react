@@ -4,10 +4,10 @@ import BreadCrumb  from '../BreadCrumb';
 import HeaderOne from '../Header/HeaderOne';
 import FooterOne from '../Footer/FooterOne';
 import { Link } from 'react-router-dom';
-import portfolio1 from "../../assets/images/resource/portfolio-01.jpg";
-import portfolio2 from "../../assets/images/resource/portfolio-02.jpg";
-import portfolio3 from "../../assets/images/resource/portfolio-03.jpg";
-import project from "../../assets/images/resource/project-details.jpg";
+import portfolio1 from "../../assets/images/services/project.jpg";
+import portfolio2 from "../../assets/images/services/project2.jpg";
+import portfolio3 from "../../assets/images/services/project3.jpg";
+import project from "../../assets/images/services/detailBanner.jpg";
 
 
 const ProjectsDetails = () => {
