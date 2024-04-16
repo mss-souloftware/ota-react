@@ -16,7 +16,7 @@ export const Services = () => (
 );
 export const Page = () => (
     <Fragment>
-        <li><Link to="/projects">Projects</Link></li>
+        <li><Link to="/our-work">Our Work</Link></li>
         <li><Link to="/projects-details">Projects Details</Link></li>
         <li><Link to="/pricing">Pricing</Link></li>
         <li><Link to="/team">Team</Link></li>

@@ -2,7 +2,7 @@ import React from 'react';
 import { pageTitle } from '../PageTitle';
 import HeaderOne from '../Header/HeaderOne';
 import FooterOne from '../Footer/FooterOne';
-import bg from '../../assets/images/resource/page-title-bg.jpg';
+import bg from '../../assets/images/banner/404Bg.jpg';
 import { Link } from 'react-router-dom';
 
 
