@@ -171,6 +171,21 @@ $font-family_2: Rubik;
 ====================================================================
 
 ***/
+.bgOverlay::before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.bgOverlay .auto-container {
+	position: relative;
+	z-index: 2;
+}
 
 .logo-box .logo img {
 	max-width: 150px;
@@ -194,7 +209,7 @@ $font-family_2: Rubik;
 	color: #fff !important;
 }
 
-.bannerBg{
+.bannerBg {
 	background: url('../../images/banner/banner-bg.png') no-repeat top;
 	background-size: contain;
 }

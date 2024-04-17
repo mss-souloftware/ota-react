@@ -87,7 +87,7 @@ const About = () => {
 
         <>
             <HeaderOne></HeaderOne>
-            <section className="page__title p_relative">
+            <section className="page__title p_relative bgOverlay">
                 <div className="bg-layer" style={{ backgroundImage: `url(${g1})` }}></div>
                 <div className="auto-container">
                     <div className="content__box p_relative">
