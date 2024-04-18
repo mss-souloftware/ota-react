@@ -10,8 +10,15 @@ export const Home = () => (
 );
 export const Services = () => (
     <Fragment>
-        <li><Link to="/services">Services</Link></li>
-        <li><Link to="/services-details">Services Details</Link></li>
+        <li><Link to="/creative-and-design">Creative & Design</Link></li>
+        <li><Link to="/app-development">App Development</Link></li>
+        <li><Link to="/cyber-security">Cyber Security</Link></li>
+        <li><Link to="/digital-marketing">Digital Marketing</Link></li>
+        <li><Link to="/lead-generation">Lead Generation</Link></li>
+        <li><Link to="/seo">SEO</Link></li>
+        <li><Link to="/smm">SMM</Link></li>
+        <li><Link to="/video-animation">Video Animation</Link></li>
+        <li><Link to="/web-development">Web Development</Link></li>
     </Fragment>
 );
 export const Page = () => (
