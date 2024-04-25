@@ -53,7 +53,7 @@ const FooterOne = () => {
                                         <h4>Newletter</h4>
                                     </div>
                                     <div className="text">
-                                        <p>Integrate with your existing systems, minimizing disruption and maximizing productivity.</p>
+                                        <p>Explore in-depth analyses of industry trends, insider tips from our team of experts, and success stories from businesses like yours.</p>
                                     </div>
                                     <div className="subscribe-inner">
                                         <form action="contact" method="post" className="subscribe-form" onSubmit={handleSubmit}>

@@ -43,16 +43,16 @@ const Blog = () => {
                     <div className="col-lg-6 col-md-12">
                         <div className="title__data">
                             <div className="sub__title">
-                                <h4>Latest News </h4>
+                                <h4>LATEST NEWS</h4>
                             </div>
                             <div className="title">
-                                <h2>Learn From Blog</h2>
+                                <h2>Blogs & Articles</h2>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-6 col-md-12">
                         <div className="normaol__text">
-                            <p>Our dedicated team of technology professionals comprises experienced engineers, developers, and researchers who are passionate about pushing the boundaries of technology.</p>
+                            <p>Stay ahead of the curve with our expertly curated collection of articles, guides, and tips covering everything from design trends to marketing strategies. Whether you're a seasoned pro or just getting started, our blog is your go-to resource for all things digital.</p>
                         </div>
                     </div>
                 </div>

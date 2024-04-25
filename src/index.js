@@ -50,8 +50,8 @@ const RootComponent = () => {
         <div className="loader-wrap">
           <div className="hendel__preloder">
             <div className="preloader">
-              <div className="preloader-ring">datamatrix datamatrix datamatrix</div>
-              <div className="preloader-ring">datamatrix datamatrix datamatrix</div>
+              <div className="preloader-ring">outsource to asia outsource to asia</div>
+              <div className="preloader-ring">outsource to asia outsource to asia</div>
             </div>
           </div>
         </div>

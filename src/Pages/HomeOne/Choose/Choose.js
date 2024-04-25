@@ -21,10 +21,10 @@ const Choose = () => {
                             <div className="choose__block__right">
                                 <div className="title__data">
                                     <div className="sub__title">
-                                        <h4>Why choose us</h4>
+                                        <h4>WHY CHOOSE US</h4>
                                     </div>
                                     <div className="title">
-                                        <h2>We Provide Your Best Work </h2>
+                                        <h2>Your Vision, Our Expertise</h2>
                                     </div>
                                 </div>
                                 <div className="team__data">
@@ -35,8 +35,8 @@ const Choose = () => {
                                         
                                     </div>
                                     <div className="team__data__right">
-                                        <h3>Expert Team :</h3>
-                                        <p>Our dedicated team of technology professionals comprises experienced engineers, developers, and researchers who are passionate about pushing the boundaries of technology.</p>
+                                        <h3>Expertise</h3>
+                                        <p>With years of experience and a team of skilled professionals, we bring a wealth of expertise to every project. From design and development to marketing and beyond, we have the knowledge and know-how to deliver results that exceed your expectations.</p>
                                     </div>
                                 </div>
                                 <div className="team__data">
@@ -44,8 +44,8 @@ const Choose = () => {
                                         <img src={choose3} alt="" />
                                     </div>
                                     <div className="team__data__right">
-                                        <h3>Expert Team :</h3>
-                                        <p>Our dedicated team of technology professionals comprises experienced engineers, developers, and researchers who are passionate about pushing the boundaries of technology.</p>
+                                        <h3>Quality</h3>
+                                        <p>We take pride in delivering high-quality work that stands the test of time. Whether it's a website, a mobile app, or a marketing campaign, you can trust that our solutions are built to last and designed to perform.</p>
                                     </div>
                                 </div>
                                 <div className="team__data three">
@@ -53,8 +53,8 @@ const Choose = () => {
                                         <img src={choose4} alt="" />
                                     </div>
                                     <div className="team__data__right">
-                                        <h3>Expert Team :</h3>
-                                        <p>Our dedicated team of technology professionals comprises experienced engineers, developers, and researchers who are passionate about pushing the boundaries of technology.</p>
+                                        <h3>Innovation</h3>
+                                        <p>We're not content to rest on our laurels. We're constantly pushing the boundaries of what's possible, exploring new technologies, and embracing new ideas to deliver innovative solutions that keep you ahead of the curve.</p>
                                     </div>
                                 </div>
                             </div>

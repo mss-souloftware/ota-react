@@ -158,10 +158,10 @@ const TestimonialsSection = () => {
         <div className="testimonial__top">
           <div className="title__data">
             <div className="sub__title">
-              <h4>Testimonial </h4>
+              <h4>TESTIMONIALS</h4>
             </div>
             <div className="title">
-              <h2>What Our Client Says</h2>
+              <h2> Hear What Our Clients Have to Say</h2>
             </div>
           </div>
           <div className="swiper__button">
