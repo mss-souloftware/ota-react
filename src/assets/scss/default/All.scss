@@ -171,6 +171,11 @@ $font-family_2: Rubik;
 ====================================================================
 
 ***/
+
+.circle-main .circle img{
+    max-width:100px;
+}
+
 .bgOverlay::before {
 	position: absolute;
 	content: "";
