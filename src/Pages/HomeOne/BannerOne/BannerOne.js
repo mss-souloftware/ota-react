@@ -69,7 +69,7 @@ const BannerOne = () => {
                       <img src={C2} alt="" />
                       <div className="round-text">
                         <div className="text_1">
-                          <p className="text_2">years experience years experience</p>
+                          <p className="text_2">10 Years of Experience 10 Years of</p>
                         </div>
                       </div>
                     </div>

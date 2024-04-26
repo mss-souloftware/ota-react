@@ -172,6 +172,57 @@ $font-family_2: Rubik;
 
 ***/
 
+.bottom-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-inner > div{
+    width:50%;
+}
+
+.bottom-inner .policies ul{
+    display:flex;
+    justify-content:end;
+}
+
+.bottom-inner .policies ul li{
+    margin-left:10px;
+}
+
+@media(max-width:768px){
+    .bottom-inner{
+        flex-flow:column;
+    }
+
+    .bottom-inner > div{
+        width:100%;
+    }
+
+    .footer-bottom .copyright p{
+        text-align:center;
+    }
+
+    .bottom-inner .policies ul{
+        justify-content:center;
+        margin-top:10px;
+    }
+}
+
+.service__block .service__text p{
+    max-height: 295px;
+    height: 100%;
+    overflow: auto;
+    padding:0 3px;
+}
+
+.service__block .service__text p::-webkit-scrollbar{
+    width:5px;
+}
+.service__block .service__text p::-webkit-scrollbar-thumb{
+    background:#FF0E75;
+}
+
 .circle-main .circle img{
     max-width:100px;
 }

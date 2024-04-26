@@ -31,6 +31,8 @@ import Error from "./Pages/Error/Error";
 import Blog from "./Pages/Blog/Blog";
 import BlogDetails from "./Pages/Blog/BlogDetails";
 import Contact from "./Pages/Contact/Contact";
+import Privacy from "./Pages/Privacy";
+import Terms from "./Pages/Terms";
 import WOW from 'wowjs';
 
 function App() {
@@ -74,6 +76,8 @@ function App() {
             <Route path="/blog" element={<Blog/>} />
             <Route path="/blog-details" element={<BlogDetails/>} />
             <Route path="/contact" element={<Contact/>} />
+            <Route path="/privacy-policy" element={<Privacy/>} />
+            <Route path="/terms-and-conditions" element={<Terms/>} />
         </Routes></Router>
         <ScrollTop/>
 
