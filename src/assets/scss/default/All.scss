@@ -171,60 +171,95 @@ $font-family_2: Rubik;
 ====================================================================
 
 ***/
+.serviceAccr{
+	margin-top: 50px;
+}
+.serviceAccr .accordion-item .accordion-header button,
+.serviceAccr .accordion-item {
+	background-color: #00061A !important;
+	border: none !important;
+	color: #fff !important;
+	box-shadow: none !important;
+}
+
+.serviceAccr .accordion-item .accordion-header button svg {
+	margin-right: 10px;
+}
+
+.serviceAccr .accordion-item .accordion-header button.collapsed {
+	border-bottom: 1px solid #262B3C !important;
+	border-radius: 0px;
+}
+
+.serviceAccr .accordion-collapse {
+	border: none !important;
+	border-bottom: 1px solid #D50F68 !important;
+	border-radius: 0 !important;
+}
+
+.serviceAccr .accordion-item .accordion-header button {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.serviceAccr .accordion-button::after {
+	filter: invert(1);
+}
 
 .bottom-inner {
-    display: flex;
-    justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 
-.bottom-inner > div{
-    width:50%;
+.bottom-inner>div {
+	width: 50%;
 }
 
-.bottom-inner .policies ul{
-    display:flex;
-    justify-content:end;
+.bottom-inner .policies ul {
+	display: flex;
+	justify-content: end;
 }
 
-.bottom-inner .policies ul li{
-    margin-left:10px;
+.bottom-inner .policies ul li {
+	margin-left: 10px;
 }
 
-@media(max-width:768px){
-    .bottom-inner{
-        flex-flow:column;
-    }
+@media(max-width:768px) {
+	.bottom-inner {
+		flex-flow: column;
+	}
 
-    .bottom-inner > div{
-        width:100%;
-    }
+	.bottom-inner>div {
+		width: 100%;
+	}
 
-    .footer-bottom .copyright p{
-        text-align:center;
-    }
+	.footer-bottom .copyright p {
+		text-align: center;
+	}
 
-    .bottom-inner .policies ul{
-        justify-content:center;
-        margin-top:10px;
-    }
+	.bottom-inner .policies ul {
+		justify-content: center;
+		margin-top: 10px;
+	}
 }
 
-.service__block .service__text p{
-    max-height: 295px;
-    height: 100%;
-    overflow: auto;
-    padding:0 3px;
+.service__block .service__text p {
+	max-height: 295px;
+	height: 100%;
+	overflow: auto;
+	padding: 0 3px;
 }
 
-.service__block .service__text p::-webkit-scrollbar{
-    width:5px;
-}
-.service__block .service__text p::-webkit-scrollbar-thumb{
-    background:#FF0E75;
+.service__block .service__text p::-webkit-scrollbar {
+	width: 5px;
 }
 
-.circle-main .circle img{
-    max-width:100px;
+.service__block .service__text p::-webkit-scrollbar-thumb {
+	background: #FF0E75;
+}
+
+.circle-main .circle img {
+	max-width: 100px;
 }
 
 .bgOverlay::before {

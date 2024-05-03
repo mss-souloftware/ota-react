@@ -26,14 +26,14 @@ export default function Header({ variant }) {
                         <div className="top__inner">
                             <div className="top__hrader__left">
                                 <ul>
-                                    <li><span>Address :</span>  3517 W. Gray St. Utica, Pennsylvania 57867</li>
+                                    <li><span>Address :</span>  2093 Philadelphia Pike, Claymont, DE 19703, USA</li>
                                     <li>/</li>
-                                    <li><span>Email :</span> <Link to="mailto:info@company.com">info@company.com</Link></li>
+                                    <li><span>Email :</span> <Link to="mailto:info@outsourcetoasia.co">info@outsourcetoasia.co</Link></li>
                                 </ul>
                             </div>
                             <div className="top__hrader__right">
                                 <ul>
-                                    <li><Link to="#"><i className="icon-10"></i></Link></li>
+                                    <li><Link to="https://www.facebook.com/outsourcetoasiallc/"><i className="icon-10"></i></Link></li>
                                     <li><Link to="#"><i className="icon-14"></i></Link></li>
                                     <li><Link to="#"><i className="icon-01"></i></Link></li>
                                     <li><Link to="#"><i className="icon-11"></i></Link></li>

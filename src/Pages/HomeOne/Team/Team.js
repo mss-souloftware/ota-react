@@ -14,11 +14,11 @@ import WOW from 'wowjs';
 import portfolio1 from "../../../assets/images/portfolio/portfolio-01.jpg";
 import portfolio2 from "../../../assets/images/portfolio/portfolio-02.jpg";
 import portfolio3 from "../../../assets/images/portfolio/portfolio-03.jpg";
-import portfolio4 from "../../../assets/images/portfolio/portfolio-04.jpg";
-import portfolio5 from "../../../assets/images/portfolio/portfolio-05.jpg";
-import portfolio6 from "../../../assets/images/portfolio/portfolio-06.jpg";
-import portfolio7 from "../../../assets/images/portfolio/portfolio-07.jpg";
-import portfolio8 from "../../../assets/images/portfolio/portfolio-08.jpg";
+import portfolio4 from "../../../assets/images/portfolio/portfolio-01.jpg";
+import portfolio5 from "../../../assets/images/portfolio/portfolio-02.jpg";
+import portfolio6 from "../../../assets/images/portfolio/portfolio-03.jpg";
+import portfolio7 from "../../../assets/images/portfolio/portfolio-01.jpg";
+import portfolio8 from "../../../assets/images/portfolio/portfolio-02.jpg";
 
 let allSlidesFirst = {
     dots: false,
