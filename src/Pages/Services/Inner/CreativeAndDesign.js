@@ -9,10 +9,16 @@ import g1 from "../../../assets/images/services/inner/creative-design.jpg";
 
 import two from "../../../assets/images/services/contact.jpg";
 import mainBanner from "../../../assets/images/services/inner/creative-banner.jpg";
-import service from "../../../assets/images/services/inner/creative-service.jpg";
 
 import two1 from "../../../assets/images/services/inner/creative-Cta.jpg";
 
+
+import accrD from "../../../assets/images/services/inner/creative-and-design/creative-service.jpg";
+import accr1 from "../../../assets/images/services/inner/creative-and-design/logoService.jpg";
+import accr2 from "../../../assets/images/services/inner/creative-and-design/ui.jpg";
+import accr3 from "../../../assets/images/services/inner/creative-and-design/branding.jpg";
+import accr4 from "../../../assets/images/services/inner/creative-and-design/graphic.jpg";
+import accr5 from "../../../assets/images/services/inner/creative-and-design/print.jpg";
 
 
 const Services = () => {
@@ -42,6 +48,12 @@ const Services = () => {
             phone: '',
             message: ''
         });
+    };
+
+    const [activeAccordion, setActiveAccordion] = useState(null);
+
+    const handleAccordionChange = (eventKey) => {
+        setActiveAccordion(eventKey);
     };
 
     return (
@@ -81,7 +93,7 @@ const Services = () => {
                                 </div>
                                 <div className="texts">
                                     <p>
-                                        Unlock the potential of your brand with our Creative & Design services. We understand that in today's digital age, visual appeal is crucial for capturing attention and making a lasting impression. That's why we're here to offer you a range of design solutions tailored to meet your unique needs and elevate your brand to new heights
+                                        Unlock the potential of your brand with our Creative & Design services. We understand that in today's digital age, visual appeal is crucial for capturing attention and making a lasting impression. That's why we're here to offer you a range of design solutions tailored to meet your unique needs and elevate your brand to new heights.
                                     </p>
                                 </div>
                                 <div className="btn-box">
@@ -114,7 +126,7 @@ const Services = () => {
                         <div className="col-lg-2 col-md-12"></div>
                         <div className="col-lg-6 col-md-12">
                             <div className="normaol__text">
-                                <p>Stay ahead of the curve with our expertly curated collection of articles, guides, and tips covering everything from design trends to marketing strategies. Whether you're a seasoned pro or just getting started, our blog is your go-to resource for all things digital.</p>
+                                <p>Our team of skilled designers is passionate about bringing your vision to life. Whether you're looking to establish a strong brand identity, create stunning graphics for your website, or develop eye-catching marketing materials, we have the creativity and expertise to make it happen.</p>
                             </div>
                         </div>
                     </div>
@@ -128,8 +140,8 @@ const Services = () => {
                         <div className="col-lg-5 col-md-12">
                             <h5 className='text-uppercase'>Here's what we offer</h5>
                             <div className='serviceAccr'>
-                                <Accordion>
-                                    <Accordion.Item eventKey="0">
+                                <Accordion activeKey={activeAccordion} onSelect={handleAccordionChange}>
+                                    <Accordion.Item eventKey="1">
                                         <Accordion.Header>
                                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M11.2852 17.3647L3.82243 18.7506C2.39103 19.0164 1.67534 19.1493 1.26303 18.737C0.850719 18.3246 0.983619 17.6089 1.24943 16.1774L2.63523 8.7143C2.85745 7.51762 2.96856 6.91925 3.36302 6.5577C3.75749 6.19616 4.47889 6.1256 5.9217 5.98448C7.31227 5.84847 8.6283 5.37177 10 4L16 10.0005C14.6283 11.3723 14.1513 12.6874 14.0151 14.0781C13.8738 15.5211 13.8031 16.2426 13.4416 16.637C13.0801 17.0314 12.4818 17.1425 11.2852 17.3647Z" stroke="white" stroke-width="1.5" stroke-linejoin="round" />
@@ -138,16 +150,10 @@ const Services = () => {
                                             </svg>
                                             Logo</Accordion.Header>
                                         <Accordion.Body>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                            aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                            culpa qui officia deserunt mollit anim id est laborum.
+                                            Your logo is the cornerstone of your brand identity. Let us help you create a logo that not only looks great but also embodies the essence of your brand and resonates with your audience.
                                         </Accordion.Body>
                                     </Accordion.Item>
-                                    <Accordion.Item eventKey="1">
+                                    <Accordion.Item eventKey="2">
                                         <Accordion.Header>
                                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M15 8C15 4.13401 11.866 1 8 1C4.13401 1 1 4.13401 1 8C1 11.866 4.13401 15 8 15" stroke="white" stroke-width="1.5" />
@@ -155,11 +161,10 @@ const Services = () => {
                                             </svg>
                                             UI/UX</Accordion.Header>
                                         <Accordion.Body>
-                                            The applications of AR are vast and diverse. From entertainment and gaming, where users can see virtual characters in
-                                            their surroundings, to education.
+                                            Create intuitive and engaging user experiences with our UI/UX design services. Whether you're building a website, a mobile app, or a digital product, we'll design interfaces that are not only visually appealing but also user-friendly and conversion-focused.
                                         </Accordion.Body>
                                     </Accordion.Item>
-                                    <Accordion.Item eventKey="2">
+                                    <Accordion.Item eventKey="3">
                                         <Accordion.Header>
                                             <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M1 3.85746C6.5 -0.57443 15 0.53936 15 4.52832C15 7.5665 7.5 9 7.5 9C7.5 9 13.5 8.6935 13.5 11.451C13.5 16.0482 4 14.8628 4 14.8628" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -167,11 +172,10 @@ const Services = () => {
                                             </svg>
                                             Branding</Accordion.Header>
                                         <Accordion.Body>
-                                            The applications of AR are vast and diverse. From entertainment and gaming, where users can see virtual characters in
-                                            their surroundings, to education.
+                                            Establish a cohesive brand identity that sets you apart from the competition. From color schemes and typography to brand guidelines and messaging, we'll work with you to develop a comprehensive branding strategy that reflects your values and communicates your unique story.
                                         </Accordion.Body>
                                     </Accordion.Item>
-                                    <Accordion.Item eventKey="3">
+                                    <Accordion.Item eventKey="4">
                                         <Accordion.Header>
                                             <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M13 15L10.1069 6.7479C8.76348 2.91597 8.09177 1 7 1C5.90823 1 5.23652 2.91597 3.89309 6.7479L1 15M3.5 8H10.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -179,11 +183,10 @@ const Services = () => {
                                             </svg>
                                             Graphic</Accordion.Header>
                                         <Accordion.Body>
-                                            The applications of AR are vast and diverse. From entertainment and gaming, where users can see virtual characters in
-                                            their surroundings, to education.
+                                            Make a statement with visually stunning graphics for your website, social media channels, marketing materials, and more. Our designers will bring your ideas to life with creativity and flair, ensuring that every design element complements your brand and enhances your message.
                                         </Accordion.Body>
                                     </Accordion.Item>
-                                    <Accordion.Item eventKey="4">
+                                    <Accordion.Item eventKey="5">
                                         <Accordion.Header>
                                             <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M1 10C1 6.25027 1 4.3754 1.95491 3.06107C2.26331 2.6366 2.6366 2.26331 3.06107 1.95491C4.3754 1 6.25027 1 10 1C13.7497 1 15.6246 1 16.9389 1.95491C17.3634 2.26331 17.7367 2.6366 18.0451 3.06107C19 4.3754 19 6.25027 19 10V12C19 15.7497 19 17.6246 18.0451 18.9389C17.7367 19.3634 17.3634 19.7367 16.9389 20.0451C15.6246 21 13.7497 21 10 21C6.25027 21 4.3754 21 3.06107 20.0451C2.6366 19.7367 2.26331 19.3634 1.95491 18.9389C1 17.6246 1 15.7497 1 12V10Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -191,8 +194,7 @@ const Services = () => {
                                             </svg>
                                             Print</Accordion.Header>
                                         <Accordion.Body>
-                                            The applications of AR are vast and diverse. From entertainment and gaming, where users can see virtual characters in
-                                            their surroundings, to education.
+                                            From business cards and brochures to flyers and posters, we'll help you make a strong impression offline as well as online. Our print designs are crafted with precision and attention to detail, ensuring that your brand stands out wherever it's seen.
                                         </Accordion.Body>
                                     </Accordion.Item>
                                 </Accordion>
@@ -200,8 +202,16 @@ const Services = () => {
                         </div>
                         <div className="col-lg-1 col-md-12"></div>
                         <div className="col-lg-6 col-md-12">
-                            <img src={service} />
+                            {activeAccordion === null && <img src={accrD} alt="Default" />}
+                            {activeAccordion === "1" && <img src={accr1} alt="Logo" />}
+                            {activeAccordion === "2" && <img src={accr2} alt="Description" />}
+                            {activeAccordion === "3" && <img src={accr3} alt="Description" />}
+                            {activeAccordion === "4" && <img src={accr4} alt="Description" />}
+                            {activeAccordion === "5" && <img src={accr5} alt="Description" />}
                         </div>
+
+
+
                     </div>
                 </div>
             </section>

@@ -67,7 +67,7 @@ export default function Header({ variant }) {
                                                             </DropDown>
                                                         </li>
                                                         <li className="dropdown" >
-                                                            <NavLink to="/page">Page</NavLink>
+                                                            <NavLink to="/our-work">Work</NavLink>
                                                             <DropDown>
                                                                 <ul>
                                                                 <Page />
@@ -122,7 +122,7 @@ export default function Header({ variant }) {
                                                 </DropDown>
                                             </li>
                                             <li className="dropdown" >
-                                                <NavLink to="/page">Page</NavLink>
+                                                <NavLink to="/our-work">Work</NavLink>
                                                 <DropDown>
                                                     <ul>
                                                         <Page />
@@ -180,7 +180,7 @@ export default function Header({ variant }) {
                                                 </DropDown>
                                             </li>
                                             <li className="dropdown" >
-                                                <NavLink to="/page">Page</NavLink>
+                                                <NavLink to="/our-work">Work</NavLink>
                                                 <DropDown>
                                                     <ul>
                                                         <Page />

@@ -88,7 +88,7 @@ export default function Header({ variant }) {
                                                             </DropDown>
                                                         </li>
                                                         <li className="dropdown" >
-                                                            <NavLink to="/page">Page</NavLink>
+                                                            <NavLink to="/our-work">Work</NavLink>
                                                             <DropDown>
                                                                 <ul>
                                                                 <Page />
@@ -97,11 +97,6 @@ export default function Header({ variant }) {
                                                         </li>
                                                         <li className="dropdown" >
                                                             <NavLink to="/blog">Blog</NavLink>
-                                                            <DropDown>
-                                                                <ul>
-                                                                <News />
-                                                                </ul>
-                                                            </DropDown>
                                                         </li>  
                                                         <li >
                                                             <NavLink to="/contact">Contact</NavLink>
@@ -143,7 +138,7 @@ export default function Header({ variant }) {
                                                 </DropDown>
                                             </li>
                                             <li className="dropdown" >
-                                                <NavLink to="/page">Page</NavLink>
+                                                <NavLink to="/our-work">Work</NavLink>
                                                 <DropDown>
                                                     <ul>
                                                         <Page />
@@ -152,11 +147,6 @@ export default function Header({ variant }) {
                                             </li>
                                             <li className="dropdown" >
                                                 <NavLink to="/blog">Blog</NavLink>
-                                                <DropDown>
-                                                    <ul>
-                                                        <News />
-                                                    </ul>
-                                                </DropDown>
                                             </li>  
                                             <li >
                                                 <NavLink to="/contact">Contact</NavLink>
@@ -201,7 +191,7 @@ export default function Header({ variant }) {
                                                 </DropDown>
                                             </li>
                                             <li className="dropdown" >
-                                                <NavLink to="/page">Page</NavLink>
+                                                <NavLink to="/our-work">Work</NavLink>
                                                 <DropDown>
                                                     <ul>
                                                         <Page />
@@ -210,11 +200,6 @@ export default function Header({ variant }) {
                                             </li>
                                             <li className="dropdown" >
                                                 <NavLink to="/blog">Blog</NavLink>
-                                                <DropDown>
-                                                    <ul>
-                                                        <News />
-                                                    </ul>
-                                                </DropDown>
                                             </li>  
                                             <li >
                                                 <NavLink to="/contact">Contact</NavLink>
